@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SpecialCell" id="MGV-hn-qXV" userLabel="BikeSelectCell" customClass="SpecialsCollectionViewCell" customModule="BeaconClubMember" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3n-Po-Tu4" customClass="CVBgRectView" customModule="BeaconClubMember" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="8" width="175" height="149"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOg-Bc-wl8">
+                                <rect key="frame" x="3" y="3" width="169" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0ol-nl-sYw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kOH-qI-m22">
+                                <rect key="frame" x="5" y="23" width="165" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Epo-zf-i4K"/>
+                                    <constraint firstAttribute="width" constant="98" id="I6G-Mo-bUI"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Epo-zf-i4K"/>
+                                        <exclude reference="I6G-Mo-bUI"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HOg-Bc-wl8" secondAttribute="trailing" constant="3" id="6hb-d9-m2z"/>
+                            <constraint firstAttribute="width" constant="112" id="IH6-AX-YV8"/>
+                            <constraint firstAttribute="bottom" secondItem="HOg-Bc-wl8" secondAttribute="bottom" constant="4" id="J4u-NJ-J74"/>
+                            <constraint firstAttribute="bottom" secondItem="kOH-qI-m22" secondAttribute="bottom" constant="5" id="Nrq-qT-5r5"/>
+                            <constraint firstItem="HOg-Bc-wl8" firstAttribute="leading" secondItem="E3n-Po-Tu4" secondAttribute="leading" constant="3" id="OiL-2A-kwH"/>
+                            <constraint firstItem="HOg-Bc-wl8" firstAttribute="top" secondItem="E3n-Po-Tu4" secondAttribute="top" constant="3" id="YFl-Gj-Te0"/>
+                            <constraint firstItem="kOH-qI-m22" firstAttribute="top" secondItem="HOg-Bc-wl8" secondAttribute="bottom" priority="750" constant="5" id="YNW-c8-Wh1"/>
+                            <constraint firstAttribute="trailing" secondItem="kOH-qI-m22" secondAttribute="trailing" constant="5" id="hbU-yC-V04"/>
+                            <constraint firstAttribute="height" constant="100" id="iFJ-lE-lTY"/>
+                            <constraint firstAttribute="centerX" secondItem="kOH-qI-m22" secondAttribute="centerX" id="iVg-3W-YZr"/>
+                            <constraint firstItem="kOH-qI-m22" firstAttribute="leading" secondItem="E3n-Po-Tu4" secondAttribute="leading" constant="5" id="jm7-cX-VZL"/>
+                            <constraint firstAttribute="centerY" secondItem="kOH-qI-m22" secondAttribute="centerY" constant="-9" id="xC4-id-pLC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IH6-AX-YV8"/>
+                                <exclude reference="iFJ-lE-lTY"/>
+                                <exclude reference="J4u-NJ-J74"/>
+                                <exclude reference="iVg-3W-YZr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="E3n-Po-Tu4" firstAttribute="top" secondItem="MGV-hn-qXV" secondAttribute="topMargin" id="0Js-44-Zzr"/>
+                <constraint firstItem="E3n-Po-Tu4" firstAttribute="leading" secondItem="MGV-hn-qXV" secondAttribute="leadingMargin" id="3G3-QB-oic"/>
+                <constraint firstAttribute="trailing" secondItem="E3n-Po-Tu4" secondAttribute="trailing" id="3ov-j6-qv2"/>
+                <constraint firstAttribute="bottom" secondItem="E3n-Po-Tu4" secondAttribute="bottom" constant="8" id="DBH-0y-nef"/>
+                <constraint firstItem="E3n-Po-Tu4" firstAttribute="top" secondItem="MGV-hn-qXV" secondAttribute="topMargin" id="JWB-zv-A3V"/>
+                <constraint firstAttribute="trailingMargin" secondItem="E3n-Po-Tu4" secondAttribute="trailing" id="Mav-W2-d6A"/>
+                <constraint firstItem="E3n-Po-Tu4" firstAttribute="top" secondItem="MGV-hn-qXV" secondAttribute="top" id="OwL-C4-3sX"/>
+                <constraint firstAttribute="bottomMargin" secondItem="E3n-Po-Tu4" secondAttribute="bottom" id="imK-3B-6fJ"/>
+                <constraint firstItem="E3n-Po-Tu4" firstAttribute="leading" secondItem="MGV-hn-qXV" secondAttribute="leadingMargin" constant="-8" id="man-pA-v6A"/>
+                <constraint firstItem="E3n-Po-Tu4" firstAttribute="leading" secondItem="MGV-hn-qXV" secondAttribute="leading" id="xo1-h0-gVp"/>
+            </constraints>
+            <size key="customSize" width="200" height="200"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3G3-QB-oic"/>
+                    <exclude reference="JWB-zv-A3V"/>
+                    <exclude reference="Mav-W2-d6A"/>
+                    <exclude reference="OwL-C4-3sX"/>
+                    <exclude reference="imK-3B-6fJ"/>
+                    <exclude reference="xo1-h0-gVp"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backgroundRect" destination="E3n-Po-Tu4" id="wOO-uF-ubE"/>
+                <outlet property="itemImage" destination="kOH-qI-m22" id="vw7-By-HXg"/>
+                <outlet property="itemLabel" destination="HOg-Bc-wl8" id="1SZ-kd-10M"/>
+            </connections>
+            <point key="canvasLocation" x="401" y="429"/>
+        </collectionViewCell>
+    </objects>
+</document>
